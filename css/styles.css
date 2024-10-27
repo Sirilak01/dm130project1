@@ -1,0 +1,233 @@
+/*  
+Author: Sirilak Saosiri 
+File Name: styles.css
+Date: 10/27/2024
+*/
+
+
+/*CSS Reset*/
+body, header, nav, main, footer, img, h1, h3, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#css1, #css2, #css3 {
+    width: 40%;
+    float: left;
+    padding: 0 1%;
+}
+body {
+    padding: 2%;
+    background-color: #f6eee4;
+} 
+
+img, video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rules to show mobile class and hide tab-desk class */
+.mobile, .mobile-tablet {
+    display: block;
+}
+
+.tab-desk, .desktop {
+    display: none;
+}
+   
+/* Add this rule for #contact and #form h2 */
+#contact, #form h2 {
+    text-align: center;
+}
+
+
+/* Style rules for header area */
+.mobile h1 {
+  padding:2%;
+  text-align:center;
+  font-family:'Emblema One', cursive;
+}
+.mobile h3 {
+  padding:2%;
+  text-align:center;
+  font-family:'Lora', serif;
+}
+
+header h1 {
+    font-size: 3.0em;
+    font-family: Georgia, Times, serif;
+    padding: 3%;
+    color: #47476b;
+}
+nav 
+{
+    background-color: #2a1f14;
+} 
+nav ul 
+{ 
+    list-style: none;
+    /* margin declaration removed */
+    text-align:center;
+    font-weight: bold;
+} 
+nav li {
+    display: block;
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    border-top: 0.5px solid #f6eee4;
+} 
+nav li a { 
+    display: block;
+    color: #f6eee4; 
+    padding: 0.5em 2em;
+    text-decoration:none;
+
+}
+main {
+    padding: 2%;
+    font-family: "Lora", serif;
+} 
+main p {
+    font-size: 1.25em;
+}
+main h3 {
+    padding-top: 2%;
+    font-size: 2em;
+}
+main ul {
+    list-style-type: square;
+    font-weight: bold;
+}
+/* Style rules for class and id selectors */
+.link {
+    color: #4d3319;
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.action {
+    font-size: 1.75em;
+    font-weight: bold;
+    text-align: center;
+}
+.round {
+    border-radius: 6px;
+}
+#info ul {
+    margin-left: 10%;
+}
+
+#contact {
+    text-align: center;
+}
+.tel-link {
+    background-color: #2a1f14;
+    padding: 2%;
+    width: 80%;
+    margin: 0 auto; 
+}
+.tel-link a {
+    color: #f6eee4;
+    text-decoration: none; 
+    font-weight: bold;
+}
+@media (min-width: 577px) {
+    /* Desktop Viewport: Show desktop class, hide mobile-tablet class */
+    
+    .desktop { 
+        display: block; 
+    }
+    .mobile-tablet { 
+        display: none; 
+    }
+  /* Style rules for table */
+    table {
+        border: 1px solid #2a1f14;
+        border-collapse: collapse;
+        margin: 0 auto; 
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        padding: 1%;
+    }
+
+    th, td {
+        border: 1px solid #2a1f14;
+        padding: 1%;
+    }
+
+    th {
+        background-color: #2a1f14; 
+        color: #fff; 
+        font-size: 1.15em;
+    }
+
+    tr:nth-child(odd) {
+        background-color: #deccba; 
+    }
+
+    /* Add this comment for form elements */
+    /* Desktop Viewport: Style rules for form elements */
+    
+    form {
+        width: auto; 
+    }
+
+    .form-grid {
+        display: grid; 
+        grid-template-columns: auto auto; 
+        grid-gap: 20px; 
+    }
+
+    .btn {
+        grid-column: 1 / span 2; 
+    }
+
+/* Style rules for form elements */
+fieldset, input, textarea {
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: 2%;
+}
+
+form #submit {
+    margin: 0 auto; 
+    padding: 2%;
+    display: block;
+    background-color: #78593a; 
+    color: #f6eee4; 
+    font-size: 1.25em;
+    border-radius: 10px;
+}
+
+footer {
+    text-align: center;
+    font-size: 0.85em;
+    color: #f6eee4;
+    padding: 1% 0;
+    background-color:#2a1f14;
+}
+
+footer a {
+    color: #f3e6d8;
+    text-decoration: none;
+}
+
+
+
